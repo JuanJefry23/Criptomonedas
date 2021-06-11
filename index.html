@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotizar Criptomonedas</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <img src="img/cryptomonedas.png" />
+        </div>
+        <div class="one-half column">
+          <form id="formulario">
+            <div class="row">
+              <label>Elige tu Moneda</label>
+              <select class="u-full-width" id="moneda" name="moneda">
+                <option value="" selected disabled>Elige tu moneda</option>
+                <option value="USD">Dolar Estadounidense</option>
+                <option value="GBP">Libras</option>
+                <option value="EUR">Euros</option>
+                <option value="MXN">Peso Mexicano</option>
+                <option value="PERU">Nuevo Sol</option>
+                <option value="ARG">Peso Argentino</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Elige tu Criptomoneda</label>
+                <select
+                  class="u-full-width"
+                  id="criptomonedas"
+                  name="criptomoneda"
+                >
+                  <option value="" selected disabled>
+                    Elige tu criptomoneda
+                  </option>
+                </select>
+              </div>
+            </div>
+            <input
+              class="button-primary u-full-width"
+              type="submit"
+              value="Cotizar"
+            />
+
+            <div id="resultado" class="resultado"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
